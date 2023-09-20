@@ -5,6 +5,7 @@
  * @dest:char
  * @src:char
  * Return:char
+ * Romi coding
  */
 char *_strcat(char *dest, char *src)
 {
