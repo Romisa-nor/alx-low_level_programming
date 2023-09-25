@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ *
  * print_number - Prints any integer with putchar
  * @n: Number to prints
  *
@@ -22,4 +23,4 @@ void print_number(int n)
 		print_number(x / 10);
 
 	_putchar(x % 10 + '0');
-}
+}//by : romi :)
