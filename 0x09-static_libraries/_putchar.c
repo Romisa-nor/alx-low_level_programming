@@ -1,4 +1,4 @@
-#include "main.h"
+#include "unistd.h"
 
 /**
  * _putchar take char and give int
@@ -7,5 +7,5 @@
  */
 int _putchar(char c)
 {
-	return (write(i, &c, 1));
+	return (write(1, &c, 1));
 }
