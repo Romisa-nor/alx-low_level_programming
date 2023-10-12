@@ -2,6 +2,9 @@
 
 /**
  * main - Print _putchar
+ *
+ * Discription: prints _putchar using putchar prototype
+ * 
  * Return: Always 0
  */
 int main(void)
@@ -17,3 +20,4 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+
