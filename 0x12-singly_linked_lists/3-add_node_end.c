@@ -17,7 +17,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *dups;
+	char *dup;
 	int lens;
 	list_t *new, *last;
 
@@ -25,7 +25,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 
-	dups = strdup(str);
+	dup = strdup(str);
 	if (str == NULL)
 	{
 		free(new);
@@ -35,7 +35,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (lens = 0; str[lens];)
 		lens++;
 
-	new->str = dups;
+	new->str = dup;
 	new->lens = lens;
 	new->next = NULL;
 
