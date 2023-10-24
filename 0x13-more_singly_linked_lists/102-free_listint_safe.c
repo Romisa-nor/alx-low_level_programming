@@ -1,7 +1,7 @@
 /*
-* task number 14 free_listint_safe .
-* by : Romi 
-*/
+ * task number 14 free_listint_safe .
+ * by : Romi 
+ */
 #include "lists.h"
 
 /**

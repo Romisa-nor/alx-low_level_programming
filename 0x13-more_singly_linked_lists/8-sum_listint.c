@@ -1,7 +1,7 @@
 /*
-* task number 9 sum_listint
-* by : Romi 
-*/
+ * task number 9 sum_listint
+ * by : Romi 
+ */
 #include "lists.h"
 
 /**
@@ -12,14 +12,14 @@
  */
 int sum_listint(listint_t *head)
 {
-    int sum = 0;
-    listint_t *temp = head;
+	int sum = 0;
+	listint_t *temp = head;
 
-    while (temp)
-    {
-        sum += temp->n;
-        temp = temp->next;
-    }
+	while (temp)
+	{
+		sum += temp->n;
+		temp = temp->next;
+	}
 
-    return (sum);
+	return (sum);
 }
