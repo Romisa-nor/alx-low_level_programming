@@ -1,0 +1,5 @@
+# ninja log v5
+144	2133	7197729914909806	CMakeFiles/0x10_variadic_functions.dir/1-print_numbers.c.obj	c250c72ace50616a
+158	2139	7197729914909806	CMakeFiles/0x10_variadic_functions.dir/3-print_all.c.obj	81168589ad44b58a
+127	2142	7197729914909806	CMakeFiles/0x10_variadic_functions.dir/2-print_strings.c.obj	cfc95dd4b51ac03
+1	2144	7197729914909806	CMakeFiles/0x10_variadic_functions.dir/0-sum_them_all.c.obj	d8a63b6244597ed1
