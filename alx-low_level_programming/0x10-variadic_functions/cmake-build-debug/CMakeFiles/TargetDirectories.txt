@@ -1,3 +1,0 @@
-C:/Program Files/Git/alx-low_level_programming/0x10-variadic_functions/cmake-build-debug/CMakeFiles/0x10_variadic_functions.dir
-C:/Program Files/Git/alx-low_level_programming/0x10-variadic_functions/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Program Files/Git/alx-low_level_programming/0x10-variadic_functions/cmake-build-debug/CMakeFiles/rebuild_cache.dir
