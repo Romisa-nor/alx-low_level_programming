@@ -109,7 +109,7 @@ void print_data(unsigned char *e_ident)
 		printf("2's complement, big endian\n");
 		break;
 	default:
-		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
+		printf("<unknown: %x>\n", e_ident[EI_DATA]);
 	}
 }
 
@@ -119,8 +119,7 @@ void print_data(unsigned char *e_ident)
  *    */
 void print_version(unsigned char *e_ident)
 {
-	 printf(" Version: %d",
-			  e_ident[EI_VERSION]);
+	 printf(" Version: %d", e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -244,6 +243,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	else
 		printf("%#lx\n", e_entry);
+
 }
 
 /**
