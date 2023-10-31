@@ -89,21 +89,21 @@ void print_class(unsigned char *e_ident)
 
 /**
  * print_data - Prints the data of an ELF header.
- * @e_ident: A pointer to an array containing the ELF class.
+ * @e_ident: A pointer to an array containing the ELF data.
  */
 void print_data(unsigned char *e_ident)
 {
-	printf(" Data: ");
+    printf(" Data: ");
 
-	switch (e_ident[EI_DATA])
-	{
-	case ELFDATANONE:
-		printf("none\n");
-		break;
-	case ELFDATA2LSB:
-		printf("2's complement, little endian\n");
-		break;
-	case ELFDATA2MSB:
+    switch (e_ident[EI_DATA])
+    {
+    case ELFDATANONE:
+        printf("none\n");
+        break;
+    case ELFDATA2LSB:
+        printf("2's complement, little endian\n");
+        break;
+    case ELFDATA2MS
 		printf("2's complement, big endian\n");
 		break;
 	default:
