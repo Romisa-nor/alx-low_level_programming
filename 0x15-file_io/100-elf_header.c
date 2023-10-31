@@ -90,34 +90,31 @@ void print_class(unsigned char *e_ident)
 /**
  * print_data - Prints the data of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
- * by : romi .
  */
 void print_data(unsigned char *e_ident)
 {
-    printf(" Data: ");
+	printf(" Data: ");
 
-    // Should be EI_DATA, not EI_CLASS
-    switch (e_ident[EI_DATA]) 
-    {  
-        case ELFDATANONE:
-            printf("none\n");
-            break;
-        case ELFDATA2LSB:
-            printf("2's complement, little endian\n");
-            break;
-        case ELFDATA2MSB:
-            printf("2's complement, big endian\n");
-            break;
-        default:
-            printf("<unknown: %x>\n", e_ident[EI_DATA]);  // Use EI_DATA, not EI_CLASS
-    }
+	switch (e_ident[EI_DATA])
+	{
+	case ELFDATANONE:
+		printf("none\n");
+		break;
+	case ELFDATA2LSB:
+		printf("2's complement, little endian\n");
+		break;
+	case ELFDATA2MSB:
+		printf("2's complement, big endian\n");
+		break;
+	default:
+		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
+	}
 }
 
 /**
- * print_version - Prints the version of an ELF header.
- * @e_ident: A pointer to an array containing the ELF version.
- * by : romi .
- */
+ *  * print_version - Prints the version of an ELF header.
+ *   * @e_ident: A pointer to an array containing the ELF version.
+ *    */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
@@ -272,7 +269,6 @@ void close_elf(int elf)
  *
  * Description: If the file is not an ELF File or
  * the function fails - exit code 98.
- * by : romi .
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
