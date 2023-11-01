@@ -22,6 +22,7 @@ void close_elf(int elf);
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
+ * by: romi. 
  */
 void check_elf(unsigned char *e_ident)
 {
@@ -45,6 +46,7 @@ void check_elf(unsigned char *e_ident)
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: Magic numbers are separated by spaces.
+ * by: romi.
  */
 void print_magic(unsigned char *e_ident)
 {
@@ -90,6 +92,7 @@ void print_class(unsigned char *e_ident)
 /**
  * print_data - Prints the data of an ELF header.
  * @e_ident: A pointer to an array containing the ELF class.
+ * by: romi.
  */
 void print_data(unsigned char *e_ident)
 {
